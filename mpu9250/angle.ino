@@ -18,7 +18,7 @@ void loop()
     if ((millis() - prev_ms) > 16)
     {
         mpu.update();
-        mpu.print();
+       // mpu.print();
 
         Serial.print("roll  (x-forward (north)) : ");
         Serial.println(mpu.getRoll());
